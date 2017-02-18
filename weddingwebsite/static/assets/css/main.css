@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
 
 /*
 	Dimension by HTML5 UP
@@ -159,7 +160,7 @@
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		letter-spacing: 0.2rem;
 	}
 
@@ -179,6 +180,7 @@
 		}
 
 	h1 {
+		font-family: 'Tangerine', cursive;
 		font-size: 2.25rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
@@ -1052,7 +1054,8 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100vh;
+		min-height: 100%;
+		height: 150vh;
 		z-index: 1;
 	}
 
@@ -1262,7 +1265,7 @@
 				}
 
 			#header .content p {
-				text-transform: uppercase;
+				/*text-transform: uppercase;*/
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
