@@ -136,6 +136,7 @@
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
 		color: inherit;
+		font-size: 0.5rem;
 	}
 
 		a:hover {
