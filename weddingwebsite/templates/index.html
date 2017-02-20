@@ -12,6 +12,14 @@
 		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='assets/css/main.css') }}">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel=stylesheet type=text/css href="{{ url_for('static', filename='assets/css/noscript.css') }}"></noscript>
+
+
+				<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
 	</head>
 	<body>
 
@@ -79,7 +87,89 @@
 						<!-- RSVP -->
 							<article id="rsvp">
 								<h2 class="major">RSVP</h2>
-								<script type="text/javascript" src="https://form.jotform.com/jsform/70489115146154"></script>
+								
+<form id="foo">
+  <p><label for="full_name">Full Name</label>
+  <input id="full_name" name="full_name" type="text" value=""/></p>
+
+  <p><label for="email">Email:</label>
+  <input id="email" name="email" type="text" value=""/></p>
+
+<div class="field half first">
+	<p>
+	<input type="radio" id="responseyes" name="response" value="yes" checked>
+	<label for="responseyes">Yes</label>
+	</p>
+</div>
+<div class="field half">
+	<p>
+	<input type="radio" id="responseno" name="response" value="no">
+	<label for="responseno">No</label>
+	</p>
+</div>
+						
+  <p><label for="guests">Number of Guests (If yes):</label>
+  <input id="guests" name="guests" type="text" value=""/></p>
+
+<p id="result"></p>
+<input type="submit" value="Send"/>
+</form>
+<script data-cfasync="false" type="text/javascript">
+jQuery( document ).ready(function( $ ) {
+	// variable to hold request
+	var request;
+	// bind to the submit event of our form
+	$("#foo").submit(function(event){
+		// abort any pending request
+		if (request) {
+			request.abort();
+		}
+		// setup some local variables
+		var $form = $(this);
+		// let's select and cache all the fields
+		var $inputs = $form.find("input, select, button, textarea, radio");
+		// serialize the data in the form
+		var serializedData = $form.serialize();
+		// let's disable the inputs for the duration of the ajax request
+		// Note: we disable elements AFTER the form data has been serialized.
+		// Disabled form elements will not be serialized.
+		$inputs.prop("disabled", true);
+		$('#result').text('Sending data...');
+		// fire off the request to /form.php
+		request = $.ajax({
+			// url: "https://script.google.com/macros/s/AKfycbzV--xTooSkBLufMs4AnrCTdwZxVNtycTE4JNtaCze2UijXAg8/exec", // works
+      url: "https://script.google.com/macros/s/AKfycbzWrTpXDNcqpLJdurrGzat7A68WpnD7giOxdIwGmKRsZCiVdT8/exec",  // clone
+			type: "post",
+			data: serializedData
+		});
+		// callback handler that will be called on success
+		request.done(function (response, textStatus, jqXHR){
+			// log a message to the console
+      console.log(response, textStatus, jqXHR);
+			$('#result').html('<a href="https://script.google.com/macros/s/AKfycbzWrTpXDNcqpLJdurrGzat7A68WpnD7giOxdIwGmKRsZCiVdT8/exec" target="_blank">Success - see Google Sheet</a>');
+			console.log("Hooray, it worked!");
+		});
+		// callback handler that will be called on failure
+		request.fail(function (jqXHR, textStatus, errorThrown){
+			// log the error to the console
+			console.error(
+				"The following error occured: "+
+				textStatus, errorThrown
+			);
+		});
+		// callback handler that will be called regardless
+		// if the request failed or succeeded
+		request.always(function () {
+			// reenable the inputs
+			$inputs.prop("disabled", false);
+		});
+		// prevent default posting of form
+		event.preventDefault();
+	});
+});
+</script>
+
+
 				
 							</article>
 
@@ -346,11 +436,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- BG -->
 			<div id="bg"></div>
 
-		<!-- Scripts -->
-			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
-			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
 	</body>
 </html>
