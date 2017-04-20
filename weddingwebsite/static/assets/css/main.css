@@ -1095,8 +1095,8 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
-			background-position: center;
+			background-image: url("../../images/engagement_shoot/greenbelt1.jpg");
+			background-position: center top;
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
@@ -1235,9 +1235,9 @@
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
+			width: 3.5rem;
+			height: 3.5rem;
+			line-height: 3.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
@@ -1249,9 +1249,10 @@
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
-			border-top-width: 1px;
+			border-top-width: 0px;
 			border-bottom-width: 1px;
 			max-width: 100%;
+			padding-top: 5rem;
 		}
 
 			#header .content .inner {
@@ -1264,7 +1265,7 @@
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
-				max-height: 40rem;
+				max-height: 5rem;
 				overflow: hidden;
 			}
 
