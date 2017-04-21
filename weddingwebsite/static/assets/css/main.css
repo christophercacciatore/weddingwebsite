@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 
+
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -197,7 +198,9 @@
 	}
 
 	h3 {
-		font-size: 1rem;
+		font-size: 14pt;
+		color: #CC5500;
+		letter-spacing: 0.06rem;
 	}
 
 	h4 {
@@ -1189,6 +1192,7 @@
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
         max-width: 100%;
+        margin-right: 40%;
 		text-align: center;
 	}
 
@@ -1207,7 +1211,7 @@
 				position: absolute;
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
-				margin-right: 35rem;
+				/*margin-right:30 %;*/
 				width: 0px;
 				height: calc(3.5rem + 1px);
 				background: #000000;
@@ -1215,7 +1219,7 @@
 
 		#header > :first-child {
 			/*margin-top: -10rem;*/
-			margin-right: 35rem;
+			/*margin-right:30 %;*/
 		}
 
 			#header > :first-child:before {
@@ -1275,7 +1279,7 @@
 			display: -ms-flex;
 			display: flex;
 			margin-bottom: 0;
-			margin-right: 35rem;
+			/*margin-right:30 %;*/
 			list-style: none;
 			padding-left: 0;
 			border: solid 1px #000000;

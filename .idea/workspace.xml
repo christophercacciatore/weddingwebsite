@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="284052de-f1c5-4bec-9e80-306c06747883" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css" afterPath="$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingwebsite/templates/index.html" afterPath="$PROJECT_DIR$/weddingwebsite/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weddingwebsite/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+            <state relative-caret-position="156">
+              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -37,8 +38,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="1062" column="19" lean-forward="true" selection-start-line="1062" selection-start-column="19" selection-end-line="1062" selection-end-column="19" />
+            <state relative-caret-position="472">
+              <caret line="1195" column="27" lean-forward="true" selection-start-line="1195" selection-start-column="27" selection-end-line="1195" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -62,11 +63,19 @@
       <find>#9DEBE9</find>
       <find>border</find>
       <find>border-right</find>
-      <find>margin-right:</find>
       <find>h2</find>
-      <find>p</find>
       <find>background</find>
       <find>ut</find>
+      <find>p</find>
+      <find>h3</find>
+      <find>asar</find>
+      <find>80%</find>
+      <find>80</find>
+      <find>margin-right</find>
+      <find>margin-right: 40%</find>
+      <find>margin-left:</find>
+      <find>margin-right: 40</find>
+      <find>margin-right:</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -407,16 +416,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weddingwebsite/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+        <state relative-caret-position="156">
+          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="1062" column="19" lean-forward="true" selection-start-line="1062" selection-start-column="19" selection-end-line="1062" selection-end-column="19" />
+        <state relative-caret-position="472">
+          <caret line="1195" column="27" lean-forward="true" selection-start-line="1195" selection-start-column="27" selection-end-line="1195" selection-end-column="27" />
           <folding />
         </state>
       </provider>
