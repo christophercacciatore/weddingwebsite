@@ -1085,10 +1085,10 @@
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/engagement_shoot/utengagement2.jpg");
-			background-position: -60px top;
+			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			margin-right: 10%;
+			/*margin-right: 10%;*/
 			z-index: 1;
 		}
 
@@ -1206,7 +1206,7 @@
 				display: block;
 				position: absolute;
 				top: calc(-3.5rem - 1px);
-				/*left: calc(50% - 1px);*/
+				left: calc(50% - 1px);
 				margin-right: 35rem;
 				width: 0px;
 				height: calc(3.5rem + 1px);
@@ -1254,7 +1254,7 @@
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
-				max-height: 5rem;
+				max-height: 40rem;
 				overflow: hidden;
 			}
 
