@@ -1085,10 +1085,10 @@
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/engagement_shoot/utengagement2.jpg");
-			background-position: center;
-			background-size: cover;
+			background-position: -60px top;
+			background-size: 100%;
 			background-repeat: no-repeat;
-			/*margin-right: 10%;*/
+			margin-right: 10%;
 			z-index: 1;
 		}
 
