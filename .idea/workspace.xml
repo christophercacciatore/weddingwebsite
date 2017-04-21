@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="284052de-f1c5-4bec-9e80-306c06747883" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css" afterPath="$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingwebsite/templates/index.html" afterPath="$PROJECT_DIR$/weddingwebsite/templates/index.html" />
     </list>
@@ -16,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weddingwebsite/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="425" column="16" lean-forward="false" selection-start-line="425" selection-start-column="16" selection-end-line="425" selection-end-column="16" />
+            <state relative-caret-position="281">
+              <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -36,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="1233" column="0" lean-forward="true" selection-start-line="1233" selection-start-column="0" selection-end-line="1233" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="157" column="23" lean-forward="false" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -63,6 +62,11 @@
       <find>000000</find>
       <find>h1</find>
       <find>#9DEBE9</find>
+      <find>border</find>
+      <find>border-right</find>
+      <find>margin-right:</find>
+      <find>h2</find>
+      <find>p</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,12 +76,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/weddingwebsite/weddingwebsite.py" />
-        <option value="$PROJECT_DIR$/weddingwebsite/templates/index.html" />
         <option value="$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/weddingwebsite/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-150" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="717" />
@@ -160,6 +165,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,7 +344,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
+    <frame x="-150" y="23" width="1280" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -397,18 +406,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weddingwebsite/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="425" column="16" lean-forward="false" selection-start-line="425" selection-start-column="16" selection-end-line="425" selection-end-column="16" />
+        <state relative-caret-position="323">
+          <caret line="157" column="23" lean-forward="false" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weddingwebsite/static/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/weddingwebsite/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="1233" column="0" lean-forward="true" selection-start-line="1233" selection-start-column="0" selection-end-line="1233" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="85" column="49" lean-forward="true" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
           <folding />
         </state>
       </provider>
