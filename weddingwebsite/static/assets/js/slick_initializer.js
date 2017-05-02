@@ -2,8 +2,8 @@ $(document).ready(function(){
   $('.slideshow').slick({
 	  infinite: true,
 	  speed: 300,
-	  slidesToShow: 1,
-	  adaptiveHeight: true,
-	  accessibility: true
+	  slidesToShow: 1
   });
+  console.log('Carousel is running')
 });
+
