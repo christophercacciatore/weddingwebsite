@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $('.slideshow').slick({
-	  infinite: true,
 	  speed: 300,
-	  slidesToShow: 1
+	  initialSlide: 2,
+	  infinite: true
   });
   console.log('Carousel is running')
 });
