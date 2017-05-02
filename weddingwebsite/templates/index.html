@@ -19,6 +19,7 @@
 			<script src="{{ url_for('static', filename='assets/js/skel.min.js') }}"></script>
 			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
 			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.simpleWeather.min.js') }}"></script>
 
 	</head>
 	<body>
@@ -37,11 +38,11 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#about">About</a></li>
+								<li><a href="#about">About Us</a></li>
 								<li><a href="#venue">Venue</a></li>
 								<li><a href="#austin">Austin</a></li>
 								<li><a href="#registry">Registry</a></li>
-								<li><a href="#rsvp">RSVP</a></li>
+								<li><a href="#accommodations">Accommodations</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -52,7 +53,7 @@
 
 						<!-- Intro -->
 							<article id="about">
-								<h2 class="major">About</h2>
+								<h2 class="major">About Us</h2>
 								<span class="image main"><img src="../static/images/engagement_shoot/greenbelt1.jpg" alt="" /></span>
 								<p>Hi everyone!</p>
 							<br />
@@ -79,117 +80,45 @@ Chris and I originally met. Eventually, we happened to also take a small seminar
 							<article id="austin">
 								<h2 class="major">Austin</h2>
 								<span class="image main"><img src="../static/images/austin2.jpg" alt="" /></span>
-								<p>Austin is a young, vibrant city with an almost overwhelming amount of things to do. If you are looking for some outdoor fun, we recommend stand up paddleboarding (SUPing) or kayaking on Lady Bird Lake which splits the north and south parts of town.
-                                    Famous for being the "Live Music Capital of the World", you can always grab a drink and listen to music most nights of the week if you prefer the indoor scene.
-                                    You'll find places like The Belmont, The Continental Club, The Elephant Room, The White Horse and so much more just in the downtown area. Looking for more recommendations on things to eat and places to see? Just let me know and I'll point you in the right direction!</p>
-                                    <br/>
+								
+								<p>Austin is a young, vibrant city with an almost overwhelming amount of things to do. If you are looking for some outdoor fun, we recommend stand up paddleboarding <a href"http://www.supatx.com/rentals/">(SUPing)</a> or kayaking on Lady Bird Lake which splits the north and south parts of town.
+                                    
+                                <p>Famous for being the "Live Music Capital of the World", you can always grab a drink and listen to music most nights of the week if you prefer the indoor scene.
+                                    Listen to country at <a href="https://www.thewhitehorseaustin.com/"> The White Horse </a>. Relax to some jazz at <a href="https://www.brokenspokeaustintx.net/"> The Elephant Room </a>  Have an eclectic taste in music? Try out <a href = "http://saharalounge.com/"> Sahara Lounge </a>. Looking for more recommendations on things to eat and places to see? Just let me know and I'll point you in the right direction!</p>
+                                </p>
+
                                     <p>-Chris</p>
 							</article>
 
 						<!-- Contact -->
 							<article id="registry">
 								<h2 class="major">Registry</h2>
-								<p>
-								<div style='display:table-cell; vertical-align:middle; text-align:center'><a href='https://www.amazon.com/wedding/christopher-cacciatore-alexandra-van-brummen-austin-april-2018/registry/2JSZMC9YDS7XM' target='_blank'>
+			
 
-								<ul class="actions">
-							
-								<li><a class = "button icon fa fa-plane" href="https://www.travelersjoy.com/christopherandalexandra">Travelers Joy</a></li>
-								
-								<li><a class = "button icon fa fa-amazon" href="https://www.amazon.com/wedding/share/christopherandalexandra">Amazon</a></li>
-								</ul>
-								</p>
+	<a class="zola-registry-embed" href="https://www.zola.com/registry/christopherandalexa" data-registry-key="christopherandalexa">Our Zola Wedding Registry</a><script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
+					
 							</article>
 
 						<!-- RSVP -->
-							<article id="rsvp">
-								<h2 class="major">RSVP</h2>
+							<article id="accommodations">
+							<h2 class="major">Accommodations</h2>
+							<div id="accommodations">
+								<ul class="actions">
+							
+								<li><a class="button icon fa fa-home" href="https://www.airbnb.com/locations/austin/downtown">Airbnb</a><p>Pick your own place</p></li> 
 								
-<form id="foo">
-  <p><label for="full_name">Full Name</label>
-  <input id="full_name" name="full_name" type="text" value=""/></p>
+								<p>or</p>
 
-  <p><label for="email">Email:</label>
-  <input id="email" name="email" type="text" value=""/></p>
-
-
-<div class="field half first">
-	<p> 
-	<input type="radio" id="responseyes" name="response" value="yes" checked>
-	<label for="responseyes">Yes, I want to go!</label>
-	</p>
-</div>
-<div class="field half">
-	<p>
-	<input type="radio" id="responseno" name="response" value="no">
-	<label for="responseno">No, I am lame.</label>
-	</p>
-</div>
+								<li><a class="button icon fa fa-building" href="http://www.driskillhotel.com/"></i>The Driskill</a> <p> Our personal hotel choice. Room block coming soon! </p> </li>
+								</ul>
+								
+							</div>
 
 
-  <p><label for="guests">Number of Guests (If yes):</label>
-  <input id="guests" name="guests" type="text" value=""/></p>
-
-<p id="result"></p>
-<input type="submit" value="Send"/>
-</form>
-<script data-cfasync="false" type="text/javascript">
-jQuery( document ).ready(function( $ ) {
-	// variable to hold request
-	var request;
-	// bind to the submit event of our form
-	$("#foo").submit(function(event){
-		// abort any pending request
-		if (request) {
-			request.abort();
-		}
-		// setup some local variables
-		var $form = $(this);
-		// let's select and cache all the fields
-		var $inputs = $form.find("input, select, button, textarea, radio");
-		// serialize the data in the form
-		var serializedData = $form.serialize();
-		// let's disable the inputs for the duration of the ajax request
-		// Note: we disable elements AFTER the form data has been serialized.
-		// Disabled form elements will not be serialized.
-		$inputs.prop("disabled", true);
-		$('#result').text('Sending data...');
-		// fire off the request to /form.php
-		request = $.ajax({
-			// url: "https://script.google.com/macros/s/AKfycbzV--xTooSkBLufMs4AnrCTdwZxVNtycTE4JNtaCze2UijXAg8/exec", // works
-      url: "https://script.google.com/macros/s/AKfycbzWrTpXDNcqpLJdurrGzat7A68WpnD7giOxdIwGmKRsZCiVdT8/exec",  // clone
-			type: "post",
-			data: serializedData
-		});
-		// callback handler that will be called on success
-		request.done(function (response, textStatus, jqXHR){
-			// log a message to the console
-      console.log(response, textStatus, jqXHR);
-			$('#result').html('<a href="https://script.google.com/macros/s/AKfycbzWrTpXDNcqpLJdurrGzat7A68WpnD7giOxdIwGmKRsZCiVdT8/exec" target="_blank">Success - see Google Sheet</a>');
-			console.log("Hooray, it worked!");
-		});
-		// callback handler that will be called on failure
-		request.fail(function (jqXHR, textStatus, errorThrown){
-			// log the error to the console
-			console.error(
-				"The following error occured: "+
-				textStatus, errorThrown
-			);
-		});
-		// callback handler that will be called regardless
-		// if the request failed or succeeded
-		request.always(function () {
-			// reenable the inputs
-			$inputs.prop("disabled", false);
-		});
-		// prevent default posting of form
-		event.preventDefault();
-	});
-});
-</script>
 
 
-				
+
+
 							</article>
 
 
