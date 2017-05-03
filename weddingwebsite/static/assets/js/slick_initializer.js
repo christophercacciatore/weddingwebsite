@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('.slideshow').slick({
 	  autoplay: true,
   	  autoplaySpeed: 4000,
+  	  lazyLoad: 'ondemand',
 	  infinite: true
   });
 });
